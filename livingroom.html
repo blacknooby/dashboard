@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Khách</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="livingroom-bg">
+    <header>
+        <div class="logo-container">
+            <img src="logoUTE.jpg" alt="Logo UTE" class="logo">
+        </div>
+        <h1>ĐIỀU KHIỂN ĐÈN PHÒNG KHÁCH</h1>
+        <nav>
+            <a href="bedroom.html" class="nav-btn">Phòng Ngủ ➔</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="device-card">
+            <h2>Đèn Chính</h2>
+            <img id="lr-light1-img" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bóng đèn" class="bulb-img">
+            <div class="status" id="lr-light1-status">Trạng thái: Đã Tắt</div>
+            <div class="controls">
+                <button class="btn on" onclick="toggleLight('lr-light1', true)">BẬT</button>
+                <button class="btn off" onclick="toggleLight('lr-light1', false)">TẮT</button>
+            </div>
+        </div>
+
+
+        <div class="device-card">
+            <h2>Đèn Tường</h2>
+            <img id="lr-light2-img" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bóng đèn" class="bulb-img">
+            <div class="status" id="lr-light2-status">Trạng thái: Đã Tắt</div>
+            <div class="controls">
+                <button class="btn on" onclick="toggleLight('lr-light2', true)">BẬT</button>
+                <button class="btn off" onclick="toggleLight('lr-light2', false)">TẮT</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
